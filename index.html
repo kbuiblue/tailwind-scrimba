@@ -5,53 +5,48 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         />
-        <link
-            href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
+        <link href="index.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body class="bg-gray-200 w-screen h-screen">
-        <header class="bg-indigo-600 h-fit w-screen border-pink-500 border-b-4">
-            <nav class="flex flex-col py-2 w-screen">
-                <div
-                    class="flex flex-row flex-wrap justify-between w-screen px-4 py-1"
-                >
+    <body class="bg-gray-200 max-w-screen h-screen">
+        <header class="bg-[#4c51bf] min-h-[30%] w-screen border-pink-500 border-b-4">
+            <nav class="py-2 w-11/12 m-auto max-w-11/12">
+                <div class="flex flex-row justify-between w-11/12 py-1 m-auto">
                     <img class="w-24" src="/svgs/scrimba-logo.svg" />
                     <img class="w-6" src="/svgs/hamburger.svg" />
                 </div>
             </nav>
 
-            <section class="px-3 py-2">
-                <div class="flex flex-wrap flex-col w-screen pl-2 pr-4 py-2">
-                    <h1 class="text-2xl w-5/6">Want to learn Tailwind CSS?</h1>
-                    <p class="mt-2 text-sm">
+            <section class="px-4 py-2 m-auto">
+                <div class="flex flex-wrap flex-col pl-1 py-2 w-11/12 m-auto min-h-[40%]">
+                    <h1 class="text-2xl w-full">Want to learn Tailwind CSS?</h1>
+                    <p class="mt-4 text-sm max-w-[80%]">
                         Tailwind is the fastest growing utility-first CSS
                         framework. Let's learn it step by step.
                     </p>
                 </div>
 
-                <div class="relative">
+                <div class="relative m-auto max-w-10/12 px-5">
                     <button
-                        class="mt-3 mb-5 mx-2 px-3 py-2 uppercase font-bold text-sm bg-pink-500 rounded-full"
+                        class="mt-3 mb-5 px-3 py-2 uppercase font-bold text-sm bg-pink-500 rounded-full"
                     >
                         Enroll Now
                     </button>
 
                     <img
-                        class="absolute w-24 h-24 p-4 border-pink-500 border-4 bg-white rounded-full"
-                        style="left: 65%; top: 50%"
+                        class="absolute w-28 h-28 p-4 border-pink-500 border-solid border-4 bg-white rounded-full"
+                        style="left: 60%; top: 40%"
                         src="/images/tailwind-logo.png"
                     />
                 </div>
             </section>
         </header>
 
-        <main class="w-screen text-gray-500">
-            <section class="flex flex-col w-full mt-16 m-4">
-                <div class="w-11/12 mr-1">
+        <main class="w-11/12 text-gray-500 m-auto max-w-xs">
+            <section class="flex flex-col w-11/12 mt-16 m-auto">
+                <div class="flex flex-col w-full">
                     <h2
-                        class="text-indigo-600 font-bold w-full text-lg mb-2 border-b-2"
+                        class="text-[#4c51bf] font-bold w-full text-lg mb-2 border-b-[1px] border-solid border-[#c3dafe]"
                     >
                         How It Works
                     </h2>
@@ -66,32 +61,53 @@
                 </div>
             </section>
 
-            <section class="flex flex-col w-full mt-8 m-4">
-                <div class="w-11/12 mr-1">
+            <section class="flex flex-col w-11/12 mt-8 m-auto">
+                <div class="w-full">
                     <h2
-                        class="text-indigo-600 font-bold w-full text-lg mb-2 border-b-2"
+                        class="text-[#4c51bf] font-bold w-full text-lg mb-2 border-b-[1px] border-solid border-[#c3dafe]"
                     >
                         Advantages
                     </h2>
-                    <div class="w-fit bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md mx-1 text-center">
-                        <img class="w-16 bg-gray-200 p-2 rounded-full m-auto" src="/svgs/css-icon.svg" />
-                        <h3 class="font-bold text-black mt-4">No Customer CSS</h3>
+                    <div
+                        class="w-full bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md m-auto text-center"
+                    >
+                        <img
+                            class="w-16 bg-gray-200 p-2 rounded-full m-auto"
+                            src="/svgs/css-icon.svg"
+                        />
+                        <h3 class="font-bold text-black mt-4">
+                            No Custom CSS
+                        </h3>
                         <p class="mt-4">
                             Tailwind's advanced class extraction will leave your
                             project free of custom CSS.
                         </p>
                     </div>
-                    <div class="w-fit bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md mx-1 text-center">
-                        <img class="w-16 bg-gray-200 p-2 rounded-full m-auto" src="/svgs/developer-icon.svg" />
-                        <h3 class="font-bold text-black mt-4">Developer Experience</h3>
+                    <div
+                        class="w-full bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md m-auto text-center"
+                    >
+                        <img
+                            class="w-16 bg-gray-200 p-2 rounded-full m-auto"
+                            src="/svgs/developer-icon.svg"
+                        />
+                        <h3 class="font-bold text-black mt-4">
+                            Developer Experience
+                        </h3>
                         <p class="mt-4">
                             Tailwind is designed with your happiness in mind.
                             The ease of performing changes is refreshing.
                         </p>
                     </div>
-                    <div class="w-fit bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md mx-1 text-center">
-                        <img class="w-16 bg-gray-200 p-2 rounded-full m-auto" src="/svgs/mobile-icon.svg" />
-                        <h3 class="font-bold text-black mt-4">Mobile Friendly</h3>
+                    <div
+                        class="w-full bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md m-auto text-center"
+                    >
+                        <img
+                            class="w-16 bg-gray-200 p-2 rounded-full m-auto"
+                            src="/svgs/mobile-icon.svg"
+                        />
+                        <h3 class="font-bold text-black mt-4">
+                            Mobile Friendly
+                        </h3>
                         <p class="mt-4">
                             Modern applications demand mobile-friendly &
                             Tailwind's responsive modifiers make it easy.
@@ -100,19 +116,43 @@
                 </div>
             </section>
         </main>
-        <footer class="mt-6 p-6 w-screen text-gray-500 bg-sky-800">
-            <section class="w-screen">
-                <h2 class="text-gray-100 font-bold my-4">Sign up to download the free PDF</h2>
-                <form class="my-4">
-                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="First name" />
-                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="Last name" />
-                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="john@gmail.com" />
-                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="Your title" />
-                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="submit" value="Create account" />
+        <footer class="mt-14 p-6 w-screen text-gray-500 bg-[#2d3748]">
+            <section class="max-w-xs m-auto">
+                <h2 class="text-gray-100 font-bold mt-2 mb-6 text-xl w-full">
+                    Sign up to download the free PDF
+                </h2>
+                <form class="flex flex-col w-full mb-8">
+                    <input
+                        class="py-2 pl-3 pr-20 border-[#718096] bg-[#4a5568] border-solid border-2 rounded mb-4"
+                        type="text"
+                        placeholder="First name"
+                    />
+                    <input
+                        class="py-2 pl-3 pr-20 border-[#718096] bg-[#4a5568] border-solid border-2 rounded mb-4"
+                        type="text"
+                        placeholder="Last name"
+                    />
+                    <input
+                        class="py-2 pl-3 pr-20 border-[#718096] bg-[#4a5568] border-solid border-2 rounded mb-4"
+                        type="text"
+                        placeholder="john@gmail.com"
+                    />
+                    <input
+                        class="py-2 pl-3 pr-20 border-[#718096] bg-[#4a5568] border-solid border-2 rounded mb-4"
+                        type="text"
+                        placeholder="Your title"
+                    />
+                    <input
+                        class="py-2 rounded-lg text-blue-50 mb-5 align-middle text-center w-full bg-[#3182ce]"
+                        type="submit"
+                        value="Create account"
+                    />
                 </form>
             </section>
 
-            <p class="">Copyright &copy; 2019 Scrimba</p>
+            <p class="text-xs text-center mb-4">
+                Copyright &copy; 2019 Scrimba
+            </p>
         </footer>
     </body>
 </html>
