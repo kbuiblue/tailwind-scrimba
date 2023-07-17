@@ -11,7 +11,7 @@
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body class="bg-[#edf2f7] w-screen h-screen">
+    <body class="bg-gray-200 w-screen h-screen">
         <header class="bg-indigo-600 h-fit w-screen border-pink-500 border-b-4">
             <nav class="flex flex-col py-2 w-screen">
                 <div
@@ -47,7 +47,7 @@
             </section>
         </header>
 
-        <main class="w-screen">
+        <main class="w-screen text-gray-500">
             <section class="flex flex-col w-full mt-16 m-4">
                 <div class="w-11/12 mr-1">
                     <h2
@@ -55,7 +55,7 @@
                     >
                         How It Works
                     </h2>
-                    <p class="text-gray-500 mt-3 text-sm">
+                    <p class="mt-3 text-sm">
                         Tailwind is designed for rapid development of modern
                         applications. At its core, it is a robust mobile-first
                         design system built with developer experience in mind.
@@ -66,42 +66,49 @@
                 </div>
             </section>
 
-            <section class="">
-                <div class="">
-                    <img class="w-12" src="/svgs/css-icon.svg" />
-                    <h3>No Customer CSS</h3>
-                    <p>
-                        Tailwind's advanced class extraction will leave your
-                        project free of custom CSS.
-                    </p>
-                </div>
-                <div class="">
-                    <img class="w-12" src="/svgs/developer-icon.svg" />
-                    <h3>No Customer CSS</h3>
-                    <p>
-                        Tailwind is designed with your happiness in mind. The
-                        ease of performing changes is refreshing.
-                    </p>
-                </div>
-                <div class="">
-                    <img class="w-12" src="/svgs/mobile-icon.svg" />
-                    <h3>No Customer CSS</h3>
-                    <p>
-                        Modern applications demand mobile-friendly & Tailwind's
-                        responsive modifiers make it easy.
-                    </p>
+            <section class="flex flex-col w-full mt-8 m-4">
+                <div class="w-11/12 mr-1">
+                    <h2
+                        class="text-indigo-600 font-bold w-full text-lg mb-2 border-b-2"
+                    >
+                        Advantages
+                    </h2>
+                    <div class="w-fit bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md mx-1 text-center">
+                        <img class="w-16 bg-gray-200 p-2 rounded-full m-auto" src="/svgs/css-icon.svg" />
+                        <h3 class="font-bold text-black mt-4">No Customer CSS</h3>
+                        <p class="mt-4">
+                            Tailwind's advanced class extraction will leave your
+                            project free of custom CSS.
+                        </p>
+                    </div>
+                    <div class="w-fit bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md mx-1 text-center">
+                        <img class="w-16 bg-gray-200 p-2 rounded-full m-auto" src="/svgs/developer-icon.svg" />
+                        <h3 class="font-bold text-black mt-4">Developer Experience</h3>
+                        <p class="mt-4">
+                            Tailwind is designed with your happiness in mind.
+                            The ease of performing changes is refreshing.
+                        </p>
+                    </div>
+                    <div class="w-fit bg-white p-6 mt-4 border-b-4 border-pink-500 rounded-md mx-1 text-center">
+                        <img class="w-16 bg-gray-200 p-2 rounded-full m-auto" src="/svgs/mobile-icon.svg" />
+                        <h3 class="font-bold text-black mt-4">Mobile Friendly</h3>
+                        <p class="mt-4">
+                            Modern applications demand mobile-friendly &
+                            Tailwind's responsive modifiers make it easy.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <section class="w-12">
-                <h2>Sign up to download the free PDF</h2>
-                <form>
-                    <input type="text" placeholder="First name" />
-                    <input type="text" placeholder="Last name" />
-                    <input type="text" placeholder="john@gmail.com" />
-                    <input type="text" placeholder="Your title" />
-                    <input type="submit" value="Create account" />
+        <footer class="mt-6 p-6 w-screen text-gray-500 bg-sky-800">
+            <section class="w-screen">
+                <h2 class="text-gray-100 font-bold my-4">Sign up to download the free PDF</h2>
+                <form class="my-4">
+                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="First name" />
+                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="Last name" />
+                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="john@gmail.com" />
+                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="text" placeholder="Your title" />
+                    <input class="py-2 pl-3 pr-20 rounded mb-4" type="submit" value="Create account" />
                 </form>
             </section>
 
